@@ -1,0 +1,15 @@
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\dao\TecCategoriaDao.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\factory\MysqlDaoFactory.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\modelo\TecCliente.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\factory\DerbyDaoFactory.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\factory\DAOFactory.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\modelo\TecProducto.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\factory\TipoBD.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\modelo\TecProductoTecOrden.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\modelo\TecOrden.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\controlador\ControladorEcommerce.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\controlador\ControladorProducto.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\dao\TecProductoDao.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\impl\TecProductoImpl.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\daopersistencia\impl\TecCategoriaImpl.java
+C:\Users\Adrian\Documents\NetBeansProjects\eCommerce\src\main\java\ecommerce\modelo\TecCategoria.java

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>jdbcDriver</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcUsername</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcPassword</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcDB</param-name>
+        <param-value>ecommerce</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>ControladorEcommerce</servlet-name>
+        <servlet-class>ecommerce.controlador.ControladorEcommerce</servlet-class>
+    </servlet>  
+    <servlet>
+        <servlet-name>ControladorProducto</servlet-name>
+        <servlet-class>ecommerce.controlador.ControladorProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorCliente</servlet-name>
+        <servlet-class>ecommerce.controlador.ControladorCliente</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>ControladorOrden</servlet-name>
+        <servlet-class>ecommerce.controlador.ControladorOrden</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorEcommerce</servlet-name>
+        <url-pattern>/categoria</url-pattern>
+        <url-pattern>/nuevaCategoria</url-pattern>
+        <url-pattern>/guardarCategoria</url-pattern>
+        <url-pattern>/eliminarCategoria</url-pattern>
+        <url-pattern>/editarCategoria</url-pattern>
+        <url-pattern>/actualizarCategoria</url-pattern>
+        
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ControladorProducto</servlet-name>
+        <url-pattern>/producto</url-pattern>
+        <url-pattern>/producto_form</url-pattern>
+        <url-pattern>/guardarProducto</url-pattern>
+        <url-pattern>/eliminarProducto</url-pattern>
+        <url-pattern>/formEditarProducto</url-pattern>
+        <url-pattern>/editarProducto</url-pattern>
+            
+    </servlet-mapping>
+   
+     <servlet-mapping>
+        <servlet-name>ControladorCliente</servlet-name>
+        <url-pattern>/cliente</url-pattern>
+        <url-pattern>/cliente_form</url-pattern>
+        <url-pattern>/guardarCliente</url-pattern>
+        <url-pattern>/eliminarCliente</url-pattern>
+         <url-pattern>/goFormEditar</url-pattern>
+       <url-pattern>/actualizarCliente</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorOrden</servlet-name>
+        <url-pattern>/orden</url-pattern>
+        <url-pattern>/orden_form</url-pattern>
+        <url-pattern>/eliminarOrden</url-pattern>
+        <url-pattern>/guardarOrden</url-pattern>
+        <url-pattern>/editarOrden</url-pattern>
+        <url-pattern>/actualizarOrden</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <jsp-config>
+        <jsp-property-group>
+            <description>Header and Footer</description>
+            <url-pattern>/WEB-INF/view/*</url-pattern>
+            <url-pattern>/index.jsp</url-pattern>
+            <include-prelude>/WEB-INF/section/header.jspf</include-prelude>
+            <include-coda>/WEB-INF/section/footer.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
